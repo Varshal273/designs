@@ -3,17 +3,19 @@
     padding: 0;
 }
 .background{
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 5px auto;
+    margin: 5px auto; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 ::-webkit-scrollbar{
     display: none;
 }
 .background > div{
-    height: calc(5rem - 2px);
-    width: calc(5rem - 2px);
+    height: calc(5vw - 2px);
+    width: calc(5vw - 2px);
     border: 1px solid;
 }
