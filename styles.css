@@ -8,8 +8,13 @@
     flex-wrap: wrap;
     justify-content: center;
     margin: 5px auto; */
+    min-height: 100vh;
+    min-width: 100vw;
+    position: absolute;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    overflow: hidden;
+    z-index: -1;
 }
 ::-webkit-scrollbar{
     display: none;
@@ -17,5 +22,21 @@
 .background > div{
     height: calc(5vw - 2px);
     width: calc(5vw - 2px);
-    border: 1px solid;
+    border: 1px solid #00000066;
+}
+
+
+.header{
+    position: absolute;
+    top: 0;
+    height: 5vw;
+    width: 100vw;
+    backdrop-filter: invert();
+}
+.footer{
+    position: absolute;
+    top: calc(250vw - 98px);
+    height: 5vw;
+    width: 100vw;
+    backdrop-filter: invert();
 }
