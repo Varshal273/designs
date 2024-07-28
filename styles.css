@@ -13,7 +13,7 @@
     display: none;
 }
 .background > div{
-    height: calc(1in - 2px);
-    width: calc(1in - 2px);
+    height: calc(5rem - 2px);
+    width: calc(5rem - 2px);
     border: 1px solid;
 }
