@@ -35,13 +35,15 @@
     top: 0;
     height: 5vw;
     width: 100vw;
+    background-color: #00000088;
     backdrop-filter: invert();
 }
+
 .name{
     display: flex;
     flex-direction: column;
     position: relative;
-    top: calc(10vw - 2px);
+    top: calc(30vw - 3.5px);
     left: calc(5vw - .5px);
     height: calc(10vw - 2px);
     width: calc(50vw - 2px);
@@ -52,18 +54,42 @@
     align-items: center;
     border: 2px solid #00000099;
 }
-p{
+.name p{
     height: calc(5vw - 1px);
     width: 95%;
     text-align: left;
     font-family: "Rubik Mono One", monospace;
     font-size: 2vw;
 }
-h2{
+.name h2{
     border-top: 2px solid #00000099;
     height: calc(5vw - 2px);
     text-align: center;
     font-family: "Rubik Mono One", monospace;
     /* margin-left: 14vw;
     margin-right: 1vw; */
+}
+
+.profile_photo{
+    position: relative;
+    top: calc(0vw - 2.5px);
+    left: calc(65vw - 1px);
+    height: calc(30vw - 4px);
+    width: calc(30vw - 1.5px);
+    font-size: 2.5vw;
+    background-color: #ffffffaa;
+    border: 2px solid #00000099;
+    overflow: hidden;
+}
+img{
+    position: relative;
+    top: calc(2.5vw - 1px);
+    left: calc(2.5vw - 1px);
+    height: calc(25vw - 4px);
+    width: calc(25vw - 1.5px);
+    scale: 90%;
+    background-color: #ffffffaa;
+    border-radius: 15vw;
+    border: 2px solid #00000099;
+    filter: saturate(0.3);
 }
