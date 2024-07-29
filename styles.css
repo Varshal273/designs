@@ -7,7 +7,8 @@
     font-style: normal;    /* font-weight: 800; */
     color: #000000dd;
 }
-bady{
+body{
+    background-color: #fff;
     margin: 0;
     padding: 0;
     height: fit-content;
@@ -42,18 +43,19 @@ bady{
 .header{
     position: absolute;
     top: 0;
-    height: 5vw;
+    height: calc(5vw - 2.5px);
     width: 100vw;
-    background-color: #00000088;
+    background-color: #000000aa;
     backdrop-filter: invert();
     display: flex;
     /* justify-content: center; */
     align-items: center;
+    border: .15vw solid #00000099;
 }
 .header p{
     height: auto;
     width: auto;
-    color: #fff;
+    color: #ffffffcc;
     padding: 0 0 0 22vw;
     letter-spacing: 3.9vw;
     font-size: 1.3vw;
@@ -63,9 +65,9 @@ bady{
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: calc(10vw - 2px);
+    top: calc(10vw - 1.5px);
     left: calc(5vw - 0.05vw);
-    height: calc(15vw - 2px);
+    height: calc(20vw - 3px);
     width: calc(50vw - calc(2px + 2vw));
     font-size: 2.5vw;
     background-color: #ffffffcc;
@@ -77,14 +79,14 @@ bady{
     border: .15vw solid #00000099;
 }
 .name p{
-    height: calc(5vw - 1px);
+    height: calc(10vw);
     width: 100%;
     text-align: left;
     font-size: 2vw;
-    border-bottom: 0.15vw solid #00000099;
+    border-bottom: 0.15vw solid #00000077;
 }
 .name h2{
-    height: calc(10vw);
+    height: calc(10vw - 2px);
     /* width: 95%; */
     text-align: left;
     word-spacing: 3vw;
@@ -98,7 +100,7 @@ bady{
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: calc(30vw - 3px);
+    top: calc(35vw - 3px);
     left: calc(5vw - 0.05vw);
     height: calc(10vw - 3px);
     width: calc(50vw - 2px);
@@ -121,9 +123,9 @@ bady{
 .profile_photo{
     position: absolute;
     top: calc(10vw - 2px);
-    left: calc(65vw - 1px);
-    height: calc(30vw - 4px);
-    width: calc(30vw - 1.5px);
+    left: calc(60vw - 1px);
+    height: calc(35vw - 4px);
+    width: calc(35vw - 1.5px);
     font-size: 2.5vw;
     background-color: #00000077;
     border: 2px solid #00000099;
@@ -133,8 +135,8 @@ bady{
     position: relative;
     top: calc(2.5vw - 1px);
     left: calc(2.5vw - 1px);
-    height: calc(25vw - 4px);
-    width: calc(25vw - 1.5px);
+    height: calc(30vw - 4px);
+    width: calc(30vw - 1.5px);
     scale: 90%;
     background-color: #ffffff55;
     border-radius: 15vw;
@@ -146,7 +148,7 @@ bady{
     display: flex;
     flex-direction: row;
     position: absolute;
-    top:calc(50vw - 0.25vw);
+    top:calc(50vw - 0.3vw);
     left: calc(5vw - 1px);
     height: calc(10vw - 0.15vw);
     width: calc(90vw - calc(1.5px));
