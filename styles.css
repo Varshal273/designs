@@ -42,7 +42,7 @@
 .name{
     display: flex;
     flex-direction: column;
-    position: relative;
+    position: absolute;
     top: calc(30vw - 3.5px);
     left: calc(5vw - .5px);
     height: calc(10vw - 2px);
@@ -71,25 +71,54 @@
 }
 
 .profile_photo{
-    position: relative;
-    top: calc(0vw - 2.5px);
+    position: absolute;
+    top: calc(10vw - 2px);
     left: calc(65vw - 1px);
     height: calc(30vw - 4px);
     width: calc(30vw - 1.5px);
     font-size: 2.5vw;
-    background-color: #ffffffaa;
+    background-color: #00000077;
     border: 2px solid #00000099;
     overflow: hidden;
 }
-img{
+.profile_photo img{
     position: relative;
     top: calc(2.5vw - 1px);
     left: calc(2.5vw - 1px);
     height: calc(25vw - 4px);
     width: calc(25vw - 1.5px);
     scale: 90%;
-    background-color: #ffffffaa;
+    background-color: #ffffff55;
     border-radius: 15vw;
     border: 2px solid #00000099;
     filter: saturate(0.3);
+}
+
+.profession{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:calc(10vw - 2px);
+    left: calc(5vw - 1px);
+    height: calc(15vw - 2px);
+    width: calc(50vw - 1.5px);
+    font-size: 2.5vw;
+    background-color: #ffffffcc;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #00000099;
+}
+.profession h1{
+    width: 95%;
+    text-align: left;
+    height: calc(10vw - 2px);
+    font-size: 10vw;
+    letter-spacing: 1vw;
+}
+.profession h2{
+    width: 95%;
+    text-align: left;
+    height: calc(5vw - 2px);
+    letter-spacing: 1.75vw;
+    border-top: 2px solid #00000099;
 }
