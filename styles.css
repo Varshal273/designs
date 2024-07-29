@@ -41,6 +41,10 @@ body{
     border: 0.05vw solid #ffffff66;
 }
 
+p{
+    font-family: "Ubuntu Sans Mono", monospace;
+    font-weight: 600;
+}
 
 .header{
     position: absolute;
@@ -185,4 +189,43 @@ body{
     left: -50vw;
     border-top:none;
     /* background-color: #fff; */
+}
+
+
+.purpose{
+    display: flex;
+    position: absolute;
+    top:calc(65vw);
+    left: calc(60vw - 0.05vw);
+    height: calc(20vw - 0.12vw);
+    width: calc(35vw - 0.05vw);
+    background-color: #000000cc;
+    justify-content: center;
+    align-items: center;
+    border: 0.15vw solid #ffffff99;
+}
+.purpose p{
+    padding: 0 4vw;
+    font-size: 4vw;
+    text-align: right;
+    /* line-height: 1vw; */
+}
+
+.purpose_statement{
+    display: flex;
+    position: absolute;
+    top:calc(65vw);
+    left: calc(5vw - 0.05vw);
+    height: calc(20vw - 0.12vw);
+    width: calc(45vw - 0.05vw);
+    background-color: #000000cc;
+    justify-content: center;
+    align-items: center;
+    border: 0.15vw solid #ffffff99;   
+}
+.purpose_statement p{
+    padding: 0 4vw;
+    font-size: 1.5vw;
+    text-align: justify;
+    line-height: 2.3vw;
 }
