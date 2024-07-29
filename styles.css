@@ -13,6 +13,8 @@ body{
     padding: 0;
     height: fit-content;
     width: fit-content;
+    /* scale: 80%;
+    margin-left: 10%; */
 }
 .background{
     /* display: flex;
@@ -34,8 +36,8 @@ body{
     display: none;
 }
 .background > div{
-    height: calc(5vw - 2px);
-    width: calc(5vw - 2px);
+    height: calc(5vw - .1vw);
+    width: calc(5vw - .1vw);
     border: .1vw solid #ffffff66;
 }
 
@@ -43,14 +45,15 @@ body{
 .header{
     position: absolute;
     top: 0;
-    height: calc(5vw - 2.5px);
-    width: 100vw;
+    height: calc(5vw - 0.1vw);
+    width: calc(100vw);
     background-color: #000000aa;
     backdrop-filter: invert();
     display: flex;
     /* justify-content: center; */
     align-items: center;
-    border: .15vw solid #ffffff99;
+    border: .1vw solid #ffffff99;
+    border-bottom: 0.15vw solid #ffffff99;
 }
 .header p{
     height: auto;
@@ -65,10 +68,10 @@ body{
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: calc(10vw - 1.5px);
+    top: calc(10vw - 0.05vw);
     left: calc(5vw - 0.05vw);
-    height: calc(20vw - 3px);
-    width: calc(50vw - calc(2px + 2vw));
+    height: calc(20vw - 0.1vw);
+    width: calc(50vw - calc(2vw + 0.05vw));
     font-size: 2.5vw;
     background-color: #000000cc;
     /* backdrop-filter: invert(); */
@@ -79,14 +82,14 @@ body{
     border: .15vw solid #ffffff99;
 }
 .name p{
-    height: calc(10vw);
+    height: calc(10vw - 0.1vw);
     width: 100%;
     text-align: left;
     font-size: 2vw;
     border-bottom: 0.15vw solid #ffffff77;
 }
 .name h2{
-    height: calc(10vw - 2px);
+    height: calc(10vw - 0.1vw);
     /* width: 95%; */
     text-align: left;
     word-spacing: 3vw;
@@ -100,10 +103,10 @@ body{
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: calc(35vw - 3px);
+    top: calc(35vw);
     left: calc(5vw - 0.05vw);
-    height: calc(10vw - 3px);
-    width: calc(50vw - 2px);
+    height: calc(10vw - 0.08vw);
+    width: calc(50vw - 0.05vw);
     background-color: #000000cc;
     border: .15vw solid #ffffff99;
     justify-content: space-around;
@@ -122,25 +125,24 @@ body{
 
 .profile_photo{
     position: absolute;
-    top: calc(10vw - 2px);
-    left: calc(60vw - 1px);
-    height: calc(35vw - 4px);
+    top: calc(10vw - 0.05vw);
+    left: calc(60vw);
+    height: calc(35vw - 0.05vw);
     width: calc(35vw - 1.5px);
     font-size: 2.5vw;
     background-color: #ffffff77;
-    border: 2px solid #ffffff99;
+    border: 0.15vw solid #ffffff99;
     overflow: hidden;
 }
 .profile_photo img{
     position: relative;
-    top: calc(2.5vw - 1px);
-    left: calc(2.5vw - 1px);
-    height: calc(30vw - 4px);
-    width: calc(30vw - 1.5px);
-    scale: 90%;
+    top: calc(2.5vw - 0.05vw);
+    left: calc(2.5vw - 0.05vw);
+    height: calc(30vw);
+    width: calc(30vw);
     background-color: #00000055;
     border-radius: 15vw;
-    border: 2px solid #ffffff99;
+    border: 0.15vw solid #ffffff99;
     filter: saturate(0.3);
 }
 
@@ -148,10 +150,10 @@ body{
     display: flex;
     flex-direction: row;
     position: absolute;
-    top:calc(50vw - 0.3vw);
-    left: calc(5vw - 1px);
-    height: calc(10vw - 0.15vw);
-    width: calc(90vw - calc(1.5px));
+    top:calc(50vw);
+    left: calc(5vw - 0.05vw);
+    height: calc(10vw - 0.12vw);
+    width: calc(90vw - 0.05vw);
     font-size: 2.5vw;
     background-color: #000000cc;
     /* justify-content: space-around    ; */
@@ -168,9 +170,9 @@ body{
     padding: 0 0 1vw 5.75vw;
 }
 .profession h2{
-    flex: 0 0 calc(50vw - 1.2vw);
+    flex: 0 0 calc(50vw - 1.25vw);
     text-align: left;
-    height: calc(5vw - 0.15vw);
+    height: calc(5vw - 0.1vw);
     letter-spacing: 1.75vw;
     border-top: 0.15vw solid #ffffff99;
     padding: 0 0 0 1.2vw;
