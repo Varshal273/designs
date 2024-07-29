@@ -45,7 +45,7 @@ body{
     top: 0;
     height: calc(5vw - 2.5px);
     width: 100vw;
-    background-color: #ffffffaa;
+    background-color: #000000aa;
     backdrop-filter: invert();
     display: flex;
     /* justify-content: center; */
@@ -55,7 +55,7 @@ body{
 .header p{
     height: auto;
     width: auto;
-    color: #000000cc;
+    color: #ffffffcc;
     padding: 0 0 0 22vw;
     letter-spacing: 3.9vw;
     font-size: 1.3vw;
