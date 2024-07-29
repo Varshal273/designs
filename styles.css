@@ -196,9 +196,9 @@ p{
     display: flex;
     position: absolute;
     top:calc(65vw);
-    left: calc(60vw - 0.05vw);
+    left: calc(60vw);
     height: calc(20vw - 0.12vw);
-    width: calc(35vw - 0.05vw);
+    width: calc(35vw - 0.12vw);
     background-color: #000000cc;
     justify-content: center;
     align-items: center;
