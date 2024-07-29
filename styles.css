@@ -5,10 +5,10 @@
     font-family: "Rubik Mono One", monospace;
     font-weight: 400;
     font-style: normal;    /* font-weight: 800; */
-    color: #000000dd;
+    color: #ffffffdd;
 }
 body{
-    background-color: #fff;
+    background-color: #000;
     margin: 0;
     padding: 0;
     height: fit-content;
@@ -36,7 +36,7 @@ body{
 .background > div{
     height: calc(5vw - 2px);
     width: calc(5vw - 2px);
-    border: .1vw solid #00000066;
+    border: .1vw solid #ffffff66;
 }
 
 
@@ -45,17 +45,17 @@ body{
     top: 0;
     height: calc(5vw - 2.5px);
     width: 100vw;
-    background-color: #000000aa;
+    background-color: #ffffffaa;
     backdrop-filter: invert();
     display: flex;
     /* justify-content: center; */
     align-items: center;
-    border: .15vw solid #00000099;
+    border: .15vw solid #ffffff99;
 }
 .header p{
     height: auto;
     width: auto;
-    color: #ffffffcc;
+    color: #000000cc;
     padding: 0 0 0 22vw;
     letter-spacing: 3.9vw;
     font-size: 1.3vw;
@@ -70,20 +70,20 @@ body{
     height: calc(20vw - 3px);
     width: calc(50vw - calc(2px + 2vw));
     font-size: 2.5vw;
-    background-color: #ffffffcc;
+    background-color: #000000cc;
     /* backdrop-filter: invert(); */
     justify-content: center;
     align-items: center;
     padding: 0 1vw;
     /* background-color: #00000055; */
-    border: .15vw solid #00000099;
+    border: .15vw solid #ffffff99;
 }
 .name p{
     height: calc(10vw);
     width: 100%;
     text-align: left;
     font-size: 2vw;
-    border-bottom: 0.15vw solid #00000077;
+    border-bottom: 0.15vw solid #ffffff77;
 }
 .name h2{
     height: calc(10vw - 2px);
@@ -104,8 +104,8 @@ body{
     left: calc(5vw - 0.05vw);
     height: calc(10vw - 3px);
     width: calc(50vw - 2px);
-    background-color: #ffffffcc;
-    border: .15vw solid #00000099;
+    background-color: #000000cc;
+    border: .15vw solid #ffffff99;
     justify-content: space-around;
     align-items: center;
     padding: 0;
@@ -127,8 +127,8 @@ body{
     height: calc(35vw - 4px);
     width: calc(35vw - 1.5px);
     font-size: 2.5vw;
-    background-color: #00000077;
-    border: 2px solid #00000099;
+    background-color: #ffffff77;
+    border: 2px solid #ffffff99;
     overflow: hidden;
 }
 .profile_photo img{
@@ -138,9 +138,9 @@ body{
     height: calc(30vw - 4px);
     width: calc(30vw - 1.5px);
     scale: 90%;
-    background-color: #ffffff55;
+    background-color: #00000055;
     border-radius: 15vw;
-    border: 2px solid #00000099;
+    border: 2px solid #ffffff99;
     filter: saturate(0.3);
 }
 
@@ -153,10 +153,10 @@ body{
     height: calc(10vw - 0.15vw);
     width: calc(90vw - calc(1.5px));
     font-size: 2.5vw;
-    background-color: #ffffffcc;
+    background-color: #000000cc;
     /* justify-content: space-around    ; */
     align-items: end;
-    border: 0.15vw solid #00000099;
+    border: 0.15vw solid #ffffff99;
 }
 .profession h1{
     flex: 0 0 calc(35vw - 0.75vw);
@@ -172,7 +172,7 @@ body{
     text-align: left;
     height: calc(5vw - 0.15vw);
     letter-spacing: 1.75vw;
-    border-top: 0.15vw solid #00000099;
+    border-top: 0.15vw solid #ffffff99;
     padding: 0 0 0 1.2vw;
 }
 .profession h2:nth-of-type(2){
