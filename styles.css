@@ -1,14 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik+Mono+One&display=swap');*{
-    @import url('https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik+Mono+One&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik+Mono+One&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik+Mono+One&display=swap');
+*{
     margin: 0;
     padding: 0;
     font-family: "Rubik Mono One", monospace;
     font-weight: 400;
     font-style: normal;    /* font-weight: 800; */
-    color: #ffffffdd;
+    color: #000000aa;
 }
 body{
-    background-color: #000;
+    background-color: #fff;
     margin: 0;
     padding: 0;
     height: fit-content;
@@ -39,11 +40,6 @@ body{
     width: calc(5vw - .1vw);
     /* width: ; */
     border: 0.05vw solid #00000066;
-    height: calc(5vw - .1vw);
-    /* height:; */
-    width: calc(5vw - .1vw);
-    /* width: ; */
-    border: 0.05vw solid #ffffff66;
 }
 
 
@@ -52,20 +48,18 @@ body{
     top: 0;
     height: calc(5vw - 0.1vw);
     width: 100vw;
-    background-color: #000000aa;
+    background-color: #ffffffaa;
     backdrop-filter: invert();
     display: flex;
     justify-content: center;
     align-items: center;
     border: .1vw solid #00000099;
     border-bottom: 0.1vw solid #00000099;
-    border: .1vw solid #ffffff99;
-    border-bottom: 0.1vw solid #ffffff99;
 }
 .header p{
     height: auto;
     width: auto;
-    color: #ffffffcc;
+    color: #00000099;
     padding: 0 0 0 4vw;
     letter-spacing: 3.9vw;
     font-size: 2vw;
@@ -82,20 +76,20 @@ body{
     height: calc(20vw - 0.1vw);
     width: calc(50vw - calc(2vw + 0.05vw));
     font-size: 2.5vw;
-    background-color: #000000cc;
+    background-color: #ffffffcc;
     /* backdrop-filter: invert(); */
     justify-content: center;
     align-items: center;
     padding: 0 1vw;
     /* background-color: #00000055; */
-    border: .15vw solid #ffffff99;
+    border: .15vw solid #00000099;
 }
 .name p{
     height: calc(10vw - 0.1vw);
     width: 100%;
     text-align: left;
     font-size: 2vw;
-    border-bottom: 0.15vw solid #ffffff77;
+    border-bottom: 0.15vw solid #00000077;
 }
 .name h2{
     height: calc(10vw - 0.1vw);
@@ -118,10 +112,6 @@ body{
     width: calc(50vw - 0.05vw);
     background-color: #ffffffcc;
     border: .15vw solid #00000099;
-    height: calc(10vw - 0.08vw);
-    width: calc(50vw - 0.05vw);
-    background-color: #000000cc;
-    border: .15vw solid #ffffff99;
     justify-content: space-around;
     align-items: center;
     padding: 0;
@@ -143,8 +133,8 @@ body{
     height: calc(35vw - 0.05vw);
     width: calc(35vw - 0.1vw);
     font-size: 2.5vw;
-    background-color: #ffffff77;
-    border: 0.15vw solid #ffffff99;
+    background-color: #00000077;
+    border: 2px solid #00000099;
     overflow: hidden;
 }
 .profile_photo img{
@@ -154,13 +144,8 @@ body{
     height: calc(30vw);
     width: calc(30vw);
     background-color: #ffffff55;
-    top: calc(2.5vw - 0.05vw);
-    left: calc(2.5vw - 0.05vw);
-    height: calc(30vw);
-    width: calc(30vw);
-    background-color: #00000055;
     border-radius: 15vw;
-    border: 0.15vw solid #ffffff99;
+    border: 2px solid #00000099;
     filter: saturate(0.3);
 }
 
@@ -173,10 +158,10 @@ body{
     height: calc(10vw - 0.12vw);
     width: calc(90vw - 0.05vw);
     font-size: 2.5vw;
-    background-color: #000000cc;
+    background-color: #ffffffcc;
     /* justify-content: space-around    ; */
     align-items: end;
-    border: 0.15vw solid #ffffff99;
+    border: 0.15vw solid #00000099;
 }
 .profession h1{
     flex: 0 0 calc(35vw - 0.75vw);
@@ -192,7 +177,7 @@ body{
     text-align: left;
     height: calc(5vw - 0.1vw);
     letter-spacing: 1.75vw;
-    border-top: 0.15vw solid #ffffff99;
+    border-top: 0.15vw solid #00000099;
     padding: 0 0 0 1.2vw;
 }
 .profession h2:nth-of-type(2){

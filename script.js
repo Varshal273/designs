@@ -5,7 +5,7 @@ for(let i=0;i<10*100;i++){
 let hd = document.getElementById('header');
 let hd_str = [
     {'str':'Welcome!'},
-    {'str':'hello world!'},
+    {'str':'Hello World!'},
     {'str':'Web Designer'},
     {'str':'Web Developer!'}
 ];
