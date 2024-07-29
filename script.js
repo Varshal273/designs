@@ -10,8 +10,8 @@ let hd_str = [
     {'str':'Web Developer!'}
 ];
 let count = 0;
-setInterval(() => {
-    hd.children[0].innerText = hd_str[count].str;
-    count++;
-    if(count == hd_str.length){ count = 0;}
-}, 1000);
+// setInterval(() => {
+//     hd.children[0].innerText = hd_str[count].str;
+//     count++;
+//     if(count == hd_str.length){ count = 0;}
+// }, 1000);

@@ -54,7 +54,6 @@ body{
     align-items: center;
     border: .1vw solid #ffffff99;
     border-bottom: 0.15vw solid #ffffff99;
-    transition: all .5s;
 }
 .header p{
     height: auto;
@@ -131,7 +130,7 @@ body{
     top: calc(10vw - 0.05vw);
     left: calc(60vw);
     height: calc(35vw - 0.05vw);
-    width: calc(35vw - 1.5px);
+    width: calc(35vw - 0.1vw);
     font-size: 2.5vw;
     background-color: #ffffff77;
     border: 0.15vw solid #ffffff99;
