@@ -156,7 +156,7 @@ p{
     display: flex;
     flex-direction: row;
     position: absolute;
-    top:calc(50vw);
+    top:calc(55vw);
     left: calc(5vw - 0.05vw);
     height: calc(10vw - 0.12vw);
     width: calc(90vw - 0.05vw);
@@ -195,7 +195,7 @@ p{
 .purpose{
     display: flex;
     position: absolute;
-    top:calc(65vw);
+    top:calc(70vw);
     left: calc(60vw);
     height: calc(20vw - 0.12vw);
     width: calc(35vw - 0.12vw);
@@ -214,7 +214,7 @@ p{
 .purpose_statement{
     display: flex;
     position: absolute;
-    top:calc(65vw);
+    top:calc(70vw);
     left: calc(5vw - 0.05vw);
     height: calc(20vw - 0.12vw);
     width: calc(45vw - 0.05vw);
