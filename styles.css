@@ -6,7 +6,7 @@
     font-family: "Rubik Mono One", monospace;
     font-weight: 400;
     font-style: normal;    /* font-weight: 800; */
-    color: #000000aa;
+    color: #000000cc;
     box-sizing: border-box;
 }
 body{
@@ -17,11 +17,6 @@ body{
     width: fit-content;
 }
 .background{
-    /* display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 5px auto; */
     margin: 0;
     padding: 0;
     min-height: 100vh;
@@ -51,25 +46,64 @@ p{
 .header{
     position: absolute;
     top: 0;
-    height: calc(5vw);
+    height: calc(5vw + 0.05vw);
     width: 100vw;
-    background-color: #ffffffaa;
-    backdrop-filter: invert();
+    background-color: #ffffffcc;
+    /* backdrop-filter: invert(); */
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    border: .1vw solid #00000099;
+    border-bottom: 0.15vw solid #5e5e5e;
+}
+.header a{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: .1vw solid #00000099;
-    border-bottom: 0.1vw solid #00000099;
-}
-.header p{
-    height: auto;
-    width: auto;
+    height: 5vw;
+    width: 100%;
     color: #00000099;
-    padding: 0 0 0 4vw;
-    letter-spacing: 3.9vw;
     font-size: 2vw;
     font-family: "Ubuntu Sans Mono", monospace;
     font-weight: 400;
+    text-decoration: none;
+    transition: all .2s;
+}
+ .header nav{
+    width: 100%;
+    display: flex;
+}
+.header nav ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 0 0 0 calc(5vw - .1vw); 
+    /* justify-content: space-between; */
+}
+.header nav ul li{
+    height: 5vw;
+    flex: 0 0 15vw;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 0.1vw solid #5e5e5e;
+    border-right: 0.1vw solid #5e5e5e;
+    cursor: pointer;
+}
+.header nav ul li:hover{
+    background-color: #000000cc;
+}
+.header nav ul li a:hover{
+    color: #ffffff99;
+}
+.header nav ul li:nth-of-type(1){
+    border-left: 0.15vw solid #5e5e5e;
+    flex: 0 0 calc(15vw + 0.05vw);
+}
+.header nav ul li:nth-last-of-type(1){
+    border-right: 0.15vw solid #5e5e5e;
+    flex: 0 0 calc(15vw + 0.05vw);
 }
 
 .name{
@@ -87,17 +121,17 @@ p{
     align-items: center;
     padding: 0 1vw;
     /* background-color: #00000055; */
-    border: .1vw solid #00000099;
+    border: 0.15vw solid #5e5e5e;
 }
 .name p{
-    height: calc(10.15vw);
+    height: calc(10vw);
     width: 100%;
     text-align: left;
     font-size: 2vw;
-    border-bottom: 0.15vw solid #00000077;
+    border-bottom: 0.15vw solid #5e5e5e;
 }
 .name h2{
-    height: calc(10vw);
+    height: calc(10vw - 0.15vw);
     /* width: 95%; */
     text-align: left;
     word-spacing: 3vw;
@@ -107,7 +141,7 @@ p{
     margin-right: 1vw; */
 }
 
-.about{
+.hero{
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -116,18 +150,20 @@ p{
     height: calc(10vw);
     width: calc(50vw);
     background-color: #ffffffcc;
-    border: .1vw solid #00000099;
+    border: 0.15vw solid #5e5e5e;
     justify-content: space-around;
     align-items: center;
     padding: 0;
 }
-.about p{
+.hero p{
     flex: 0 0 auto;
-    font-size: 1.3vw;
+    font-size: 1.5vw;
     text-align: justify;
     padding: 0 3vw;
     font-family: "Ubuntu Sans Mono", monospace;
     font-weight: 500;
+    padding: 0 4vw;
+    line-height: 2.3vw;
     /* color: #000000dd; */
 }
 
@@ -139,7 +175,7 @@ p{
     width: calc(35vw);
     font-size: 2.5vw;
     background-color: #00000077;
-    border: 0.1vw solid #00000099;
+    border: 0.15vw solid #5e5e5e;
     overflow: hidden;
 }
 .profile_photo img{
@@ -150,11 +186,11 @@ p{
     width: calc(30vw);
     background-color: #ffffff55;
     border-radius: 15vw;
-    border: 0.15vw solid #00000099;
+    border: 0.15vw solid #5e5e5e;
     filter: saturate(0.3);
 }
 
-.profession{
+/* .profession{
     display: flex;
     flex-direction: row;
     position: absolute;
@@ -164,13 +200,11 @@ p{
     width: calc(90vw);
     font-size: 2.5vw;
     background-color: #ffffffcc;
-    /* justify-content: space-around    ; */
     align-items: end;
     border: 0.1vw solid #00000099;
 }
 .profession h1{
     flex: 0 0 calc(40vw - 0.1vw);
-    /* width: 100%; */
     text-align: left;
     height: calc(10vw);
     font-size: 10vw;
@@ -190,43 +224,58 @@ p{
     top: -5vw;
     left: -50vw;
     border-top:none;
-    /* background-color: #fff; */
-}
+} */
 
-.purpose{
+.about{
     display: flex;
     position: absolute;
-    top:calc(70vw);
-    left: calc(60vw);
-    height: calc(20vw);
-    width: calc(35vw);
+    top:calc(55vw);
+    left: calc(5vw);
+    height: calc(15vw);
+    width: calc(90vw);
     background-color: #ffffffcc;
-    justify-content: center;
-    align-items: center;
-    border: 0.1vw solid #00000099;
+    /* backdrop-filter: invert(); */
+    justify-content: left;
+    /* align-items: center; */
+    border: 0.15vw solid #5e5e5e;
+    border-bottom: none;
 }
-.purpose p{
-    padding: 0 4vw;
+.about p{
+    height: 15vw;
+    padding: 0 5.8vw ;
     font-size: 4vw;
-    text-align: right;
-    /* line-height: 1vw; */
+    text-align: left;
+    letter-spacing: 1.6vw;
+    overflow: hidden;
 }
-
-.purpose_statement{
+.about p b{
+    color: #00000099;
+}
+.about_statement{
     display: flex;
     position: absolute;
     top:calc(70vw);
     left: calc(5vw);
     height: calc(20vw);
-    width: calc(45vw);
+    width: calc(90vw);
     background-color: #ffffffcc;
     justify-content: center;
     align-items: center;
-    border: 0.1vw solid #00000099;   
+    border: 0.15vw solid #5e5e5e;
 }
-.purpose_statement p{
-    padding: 0 4vw;
-    font-size: 1.5vw;
+.about_statement p{
+    padding: 0 6vw;
+    font-size: 1.8vw;
     text-align: justify;
-    line-height: 2.3vw;
+    line-height: 3vw;
+    /* font-family: "Ubuntu Sans Mono", monospace; */
+    /* font-weight: 500; */
+    color: #000000dd;
+}
+.about_statement p b{
+    font-family: "Ubuntu Sans Mono", monospace;
+    font-weight: 800;
+    cursor: pointer;
+    color: #00000099;
+    /* font-size: 1.3vw; */
 }
