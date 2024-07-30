@@ -35,12 +35,13 @@ body{
     display: none;
 }
 .background > div{
+    /* height: calc(4.88vw);
+    width: calc(4.88vw); */
     height: calc(5vw - .1vw);
-    /* height:; */
     width: calc(5vw - .1vw);
-    /* width: ; */
     border: 0.05vw solid #00000066;
 }
+
 
 p{
     font-family: "Ubuntu Sans Mono", monospace;
@@ -138,7 +139,7 @@ p{
     width: calc(35vw - 0.1vw);
     font-size: 2.5vw;
     background-color: #00000077;
-    border: 2px solid #00000099;
+    border: 0.15vw solid #00000099;
     overflow: hidden;
 }
 .profile_photo img{
@@ -149,7 +150,7 @@ p{
     width: calc(30vw);
     background-color: #ffffff55;
     border-radius: 15vw;
-    border: 2px solid #00000099;
+    border: 0.15vw solid #00000099;
     filter: saturate(0.3);
 }
 
