@@ -190,47 +190,17 @@ p{
     filter: saturate(0.3);
 }
 
-/* .profession{
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    top:calc(55vw);
-    left: calc(5vw);
-    height: calc(10vw);
-    width: calc(90vw);
-    font-size: 2.5vw;
-    background-color: #ffffffcc;
-    align-items: end;
-    border: 0.1vw solid #00000099;
-}
-.profession h1{
-    flex: 0 0 calc(40vw - 0.1vw);
-    text-align: left;
-    height: calc(10vw);
-    font-size: 10vw;
-    letter-spacing: 1.75vw;
-    padding: 0 0 0 5.75vw;
-}
-.profession h2{
-    flex: 0 0 calc(50vw);
-    text-align: left;
-    height: calc(5vw);
-    letter-spacing: 1.75vw;
-    border-top: 0.15vw solid #00000099;
-    padding: 0 0 0 1.2vw;
-}
-.profession h2:nth-of-type(2){
+.about_section{
     position: relative;
-    top: -5vw;
-    left: -50vw;
-    border-top:none;
-} */
-
+    top:calc(50vw);
+    left: calc(5vw);
+    padding: 5vw 0 0 0;
+}
 .about{
     display: flex;
-    position: absolute;
-    top:calc(55vw);
-    left: calc(5vw);
+    position: relative;
+    /* top:calc(55vw);
+    left: calc(5vw); */
     height: calc(15vw);
     width: calc(90vw);
     background-color: #ffffffcc;
@@ -255,9 +225,9 @@ p{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    position: absolute;
-    top:calc(70vw);
-    left: calc(5vw);
+    position: relative;
+    /* top:calc(70vw);
+    left: calc(5vw); */
     /* height: calc(120vw); */
     height: 25vw;
     /* height: auto; */
@@ -315,8 +285,8 @@ p{
 .about_statement div:nth-of-type(3){
     padding-bottom: 2.5vw;
 }
-.about_statement div:nth-of-type(4){
-}
+/* .about_statement div:nth-of-type(4){
+} */
 /* .about_statement div:nth-of-type(5){
     height: 15vw;
 }
@@ -324,3 +294,194 @@ p{
     height: 15vw;
     border-bottom: 0.15vw solid #5e5e5e;
 } */
+
+.skills_section{
+    position: absolute;
+    top: 100vw;
+    left: 5vw;
+}
+.skills{
+    position: relative;
+    display: flex;
+    top: 5vw;
+    height: 15vw;
+    width: 90vw;
+    justify-content: start;
+    align-items: center;
+    border: 0.15vw solid #5e5e5e;
+    border-bottom: 0.05vw solid #5e5e5e;
+    background-color: #ffffffcc;
+}
+.skills h2{
+    word-spacing: 3vw;
+    font-size: 4vw;
+    letter-spacing: 1.6vw;
+    padding-left: 5.8vw;
+    color: #00000099;
+}
+.skills_about{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    top: 5vw;
+    height: auto;
+    width: 90vw;
+}
+.skills_about .programming_lang{
+    /* height: 25vw; */
+    width: 60vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* border: 0.15vw solid #5e5e5e;
+    border-top: 0.05vw solid #5e5e5e; */
+    /* background-color: #ffffffcc; */
+}
+.skills_about .programming_lang .lang_title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vw;
+    width: 60vw;
+    border: 0.1vw solid #5e5e5e;
+    border-left: 0.15vw solid #5e5e5e;
+    background-color: #ffffffcc;
+}
+.skills_about .programming_lang .lang_tile{
+    flex: 0 0 30vw;
+    flex-grow: 1;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 5vw;
+    width: 30vw;
+    border: 0.1vw solid #5e5e5e;
+    background-color: #ffffffcc;
+}
+.programming_lang .lang_tile:nth-of-type(2){
+    border-left: 0.15vw solid #5e5e5e;
+}
+.programming_lang .lang_tile:nth-of-type(4){
+    border-left: 0.15vw solid #5e5e5e;
+}
+.programming_lang .lang_tile:nth-of-type(6){
+    border: 0.1vw solid #5e5e5e;
+    border-left: 0.15vw solid #5e5e5e;
+}
+.lang_tile p{
+    padding-left: 1.5vw;
+    font-size: 1.8vw;
+    letter-spacing: .2vw;
+    color: #00000099;
+}
+.lang_title p{
+    font-size: 1.8vw;
+    font-weight: 400;
+    letter-spacing: .5vw;
+    font-family: "Rubik Mono One", monospace;
+    color: #00000099;
+}
+.programming_lang .lang_tile:hover, .database .lang_tile:hover{
+    /* background-color: #00000066; */
+    cursor: pointer;
+    filter: invert();
+    transition: all .2s;
+}
+.skills_about .database{
+    position: relative;
+    top: -20vw;
+    left: 60vw;
+    width: 30vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.database .lang_title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vw;
+    width: 30vw;
+    border: 0.1vw solid #5e5e5e;
+    border-right: 0.15vw solid #5e5e5e;
+    background-color: #ffffffcc;
+}
+.database .lang_tile{
+    flex: 0 0 30vw;
+    /* flex-grow: 1; */
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 5vw;
+    width: 25vw;
+    border: 0.1vw solid #5e5e5e;
+    border-right: 0.15vw solid #5e5e5e;
+    background-color: #ffffffcc;
+}
+.database .lang_tile:nth-last-of-type(1){
+    border: 0.1vw solid #5e5e5e;
+    border-right: 0.15vw solid #5e5e5e;
+}
+.skills_about .tools{
+    position: relative;
+    top: -20vw;
+    left: 0vw;
+    height: 10vw;
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.tools .lang_title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vw;
+    width: 90vw;
+    border: 0.1vw solid #5e5e5e;
+    border-left: 0.15vw solid #5e5e5e;
+    border-right: 0.15vw solid #5e5e5e;
+    background-color: #ffffffcc;
+}
+.tools .lang_tile{
+    flex: 0 0 45vw;
+    /* flex-grow: 1; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 20vw;
+    width: 45vw;
+    border: 0.1vw solid #5e5e5e;
+    border-bottom: 0.15vw solid #5e5e5e;
+    /* border-right: 0.15vw solid #5e5e5e; */
+    background-color: #ffffffcc;
+}
+.tools > .lang_tile >p{
+    font-size: 1.6vw;
+    line-height: 2.5vw;
+    letter-spacing: normal;
+    padding: 0 4vw;
+    text-align: justify;
+    font-weight: 400;
+}
+.tools > .lang_tile:nth-of-type(2){
+    border-left: 0.15vw solid #5e5e5e;
+}
+.tools > .lang_tile:nth-last-of-type(1){
+    border-right: 0.15vw solid #5e5e5e;
+}
+.tools > .lang_tile >p b{
+    font-family: "Ubuntu Sans Mono", monospace;
+    font-weight: 800;
+    cursor: pointer;
+    color: #00000099;
+    /* font-size: 1.3vw; */
+}
+.tools > .lang_tile >p b:nth-of-type(1){
+    display: block;
+    height: 5vw;
+    position: relative;
+    top: 0;
+    padding-top: 2.5vw;
+}
