@@ -238,7 +238,7 @@ p{
     justify-content: left;
     /* align-items: center; */
     border: 0.15vw solid #5e5e5e;
-    border-bottom: none;
+    border-bottom: 0.1vw solid #5e5e5e;
 }
 .about p{
     height: 15vw;
@@ -253,23 +253,28 @@ p{
 }
 .about_statement{
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     position: absolute;
     top:calc(70vw);
     left: calc(5vw);
-    height: calc(20vw);
+    /* height: calc(120vw); */
+    height: 25vw;
+    /* height: auto; */
     width: calc(90vw);
-    background-color: #ffffffcc;
-    justify-content: center;
-    align-items: center;
-    border: 0.15vw solid #5e5e5e;
+    /* background-color: #ffffffcc; */
+    justify-content: space-between;
+    overflow: scroll;
+    scroll-snap-type: y mandatory;
+    /* align-items: center; */
+    /* border: 0.15vw solid #5e5e5e; */
 }
 .about_statement p{
-    padding: 0 6vw;
-    font-size: 1.8vw;
+    /* padding: 0 6vw; */
+    font-size: 1.5vw;
     text-align: justify;
-    line-height: 3vw;
-    /* font-family: "Ubuntu Sans Mono", monospace; */
-    /* font-weight: 500; */
+    line-height: 2.5vw;
+    font-weight: 400;
     color: #000000dd;
 }
 .about_statement p b{
@@ -279,3 +284,43 @@ p{
     color: #00000099;
     /* font-size: 1.3vw; */
 }
+.about_statement div{
+    box-sizing: border-box;
+    position: relative;
+    /* top: 5vw; */
+    display: flex;
+    align-items: start;
+    height: 25vw;
+    width: 90vw;
+    border: 0.15vw solid #5e5e5e;
+    border-top: 0.1vw solid #5e5e5e;
+    /* border-bottom: 0.1vw solid #5e5e5e; */
+    background-color: #ffffffcc;
+    padding: 0 6vw;
+    scroll-snap-stop: always;
+    scroll-snap-align: start;
+}
+.about_statement div b:nth-of-type(1){
+    display: block;
+    height: 5vw;
+    position: relative;
+    top: 0;
+    padding-top: 2.5vw;
+    /* height: 25vw; */
+    /* padding-bottom: 2.5vw; */
+}
+.about_statement div:nth-of-type(2){
+    padding-bottom: 2.5vw;
+}
+.about_statement div:nth-of-type(3){
+    padding-bottom: 2.5vw;
+}
+.about_statement div:nth-of-type(4){
+}
+/* .about_statement div:nth-of-type(5){
+    height: 15vw;
+}
+.about_statement div:nth-of-type(6){
+    height: 15vw;
+    border-bottom: 0.15vw solid #5e5e5e;
+} */

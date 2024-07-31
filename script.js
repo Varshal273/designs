@@ -2,6 +2,8 @@ let bg = document.getElementById('background');
 for(let i=0;i<10*100;i++){
     bg.appendChild(document.createElement("div"));
 }
+let ab = document.getElementById('about_statement');
+
 // let hd = document.getElementById('header');
 // let hd_str = [
 //     {'str':'Welcome!'},
