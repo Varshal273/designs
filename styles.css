@@ -257,7 +257,6 @@ p{
 .about_statement div{
     box-sizing: border-box;
     position: relative;
-    /* top: 5vw; */
     display: flex;
     align-items: start;
     height: 25vw;
@@ -284,6 +283,41 @@ p{
 }
 .about_statement div:nth-of-type(3){
     padding-bottom: 2.5vw;
+}
+.about_section > .about_arrow {
+    position: absolute;
+    z-index: 1;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 85vw;
+    height: 5vw;
+    width: 5vw;
+    padding: 0;
+    transition: all .4s;
+    cursor: pointer;
+}
+.about_section > .about_arrow img{
+    scale: 80%;
+    height: 2.5vw;
+    width: 2.5vw;
+}
+.about_section > .up_arrow{
+    top: 15vw;
+    left: 80vw;
+}
+.about_section > .down_arrow{
+    top: 15vw;
+}
+.about_section > .about_arrow:hover img{
+    filter: invert();
+    scale: 100%;
+}
+.about_section > .about_arrow:hover{
+    background-color: #000044;
+    border-radius: 5vw;
+    scale: 80%;
 }
 /* .about_statement div:nth-of-type(4){
 } */
@@ -463,11 +497,11 @@ p{
     font-family: "Rubik Mono One", monospace;
     color: #00000099;
 }
-.database > .lang_tile:hover > p,.programming_lang > .lang_tile:hover > p{
+.database > .lang_tile:hover > p, .programming_lang > .lang_tile:hover > p{
     color: #ffffffaa;
     transition: all .2s;
 }
-.database > .lang_tile:hover,.programming_lang > .lang_tile:hover{
+.database > .lang_tile:hover, .programming_lang > .lang_tile:hover{
     cursor: pointer;
     background-color: #000000cc;
     backdrop-filter: invert();
