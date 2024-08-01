@@ -418,13 +418,14 @@ p{
     background-color: #ffffffcc;
 }
 .web_dev .lang_tile{
-    flex: 0 0 30vw;
+    flex: 0 0 45vw;
+    flex-grow: 1;
     justify-content: center;
     align-items: flex-start;
     height: 20vw;
     width: 30vw;
     border: 0.1vw solid #5e5e5e;
-    border-bottom: 0.15vw solid #5e5e5e;
+    /* border-bottom: 0.15vw solid #5e5e5e; */
 }
 .programming_lang .lang_tile:nth-of-type(2){
     border-left: 0.15vw solid #5e5e5e;
@@ -487,18 +488,22 @@ p{
     padding-top: 2.5vw;
 }
 .web_dev > .lang_tile > p{
-    font-size: 1.2vw;
-    line-height: 2vw;
+    font-size: 1.4vw;
+    line-height: 2.5vw;
     letter-spacing: normal;
-    padding: 0 2vw;
+    padding: 0 6vw;
     text-align: justify;
     font-weight: 500;
 }
 .web_dev > .lang_tile:nth-of-type(2){
     border-left: 0.15vw solid #5e5e5e;
 }
-.web_dev > .lang_tile:nth-last-of-type(1){
+.web_dev > .lang_tile:nth-last-of-type(2){
     border-right: 0.15vw solid #5e5e5e;
+}
+.web_dev > .lang_tile:nth-last-of-type(1){
+    border: 0.15vw solid #5e5e5e;
+    border-top: 0.1vw solid #5e5e5e;
 }
 .web_dev > .lang_tile >p b{
     font-size: 1.6vw;
