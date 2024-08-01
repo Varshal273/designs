@@ -188,6 +188,7 @@ p{
     border-radius: 15vw;
     border: 0.15vw solid #5e5e5e;
     filter: saturate(0.3);
+    backdrop-filter: blur(.1vw);
 }
 
 .about_section{
@@ -485,6 +486,7 @@ p{
     width: 5vw;
     border-right:none;
     padding: .5vw;
+    filter: saturate(.3);
 }
 .lang_tile > .html_img{
     margin-right: 0;
