@@ -328,36 +328,103 @@ p{
     height: auto;
     width: 90vw;
 }
-.skills_about .programming_lang{
-    /* height: 25vw; */
-    width: 60vw;
+.skills_about > div{
+    position: relative;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* border: 0.15vw solid #5e5e5e;
-    border-top: 0.05vw solid #5e5e5e; */
-    /* background-color: #ffffffcc; */
 }
-.skills_about .programming_lang .lang_title{
+.skills_about .programming_lang{
+    width: 60vw;
+}
+.skills_about .tools{
+    top: -20vw;
+    left: 0vw;
+    height: 10vw;
+    width: 90vw;
+}
+.skills_about .database{
+    top: -20vw;
+    left: 60vw;
+    width: 30vw;
+}
+.skills_about .web_dev{
+    top: -5vw;
+    width: 90vw;
+}
+.skills_about > div > .lang_title{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 5vw;
+}
+.skills_about > div > .lang_tile{
+    display: flex;
+    background-color: #ffffffcc;
+}
+.programming_lang .lang_title{
     width: 60vw;
     border: 0.1vw solid #5e5e5e;
     border-left: 0.15vw solid #5e5e5e;
     background-color: #ffffffcc;
 }
-.skills_about .programming_lang .lang_tile{
+.programming_lang .lang_tile{
     flex: 0 0 30vw;
     flex-grow: 1;
-    display: flex;
     justify-content: start;
     align-items: center;
     height: 5vw;
     width: 30vw;
     border: 0.1vw solid #5e5e5e;
     background-color: #ffffffcc;
+}
+.database .lang_title{
+    width: 30vw;
+    border: 0.1vw solid #5e5e5e;
+    border-right: 0.15vw solid #5e5e5e;
+    background-color: #ffffffcc;
+}
+.database .lang_tile{
+    flex: 0 0 30vw;
+    flex-grow: 1;
+    justify-content: start;
+    align-items: center;
+    height: 5vw;
+    width: 25vw;
+    border: 0.1vw solid #5e5e5e;
+    border-right: 0.15vw solid #5e5e5e;
+}
+.tools .lang_title{
+    width: 90vw;
+    border: 0.1vw solid #5e5e5e;
+    border-left: 0.15vw solid #5e5e5e;
+    border-right: 0.15vw solid #5e5e5e;
+    background-color: #ffffffcc;
+}
+.tools .lang_tile{
+    flex: 0 0 45vw;
+    justify-content: center;
+    align-items: flex-start;
+    height: 20vw;
+    width: 45vw;
+    border: 0.1vw solid #5e5e5e;
+    /* border-bottom: 0.15vw solid #5e5e5e; */
+}
+.web_dev .lang_title{
+    width: 90vw;
+    border: 0.15vw solid #5e5e5e;
+    border-bottom: 0.1vw solid #5e5e5e;
+    border-top: 0.1vw solid #5e5e5e;
+    background-color: #ffffffcc;
+}
+.web_dev .lang_tile{
+    flex: 0 0 30vw;
+    justify-content: center;
+    align-items: flex-start;
+    height: 20vw;
+    width: 30vw;
+    border: 0.1vw solid #5e5e5e;
+    border-bottom: 0.15vw solid #5e5e5e;
 }
 .programming_lang .lang_tile:nth-of-type(2){
     border-left: 0.15vw solid #5e5e5e;
@@ -382,88 +449,22 @@ p{
     font-family: "Rubik Mono One", monospace;
     color: #00000099;
 }
-.programming_lang .lang_tile:hover, .database .lang_tile:hover{
-    /* background-color: #00000066; */
+.programming_lang > .lang_tile:hover, .database > .lang_tile:hover{
     cursor: pointer;
     filter: invert();
     transition: all .2s;
-}
-.skills_about .database{
-    position: relative;
-    top: -20vw;
-    left: 60vw;
-    width: 30vw;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-.database .lang_title{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 5vw;
-    width: 30vw;
-    border: 0.1vw solid #5e5e5e;
-    border-right: 0.15vw solid #5e5e5e;
-    background-color: #ffffffcc;
-}
-.database .lang_tile{
-    flex: 0 0 30vw;
-    /* flex-grow: 1; */
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    height: 5vw;
-    width: 25vw;
-    border: 0.1vw solid #5e5e5e;
-    border-right: 0.15vw solid #5e5e5e;
-    background-color: #ffffffcc;
 }
 .database .lang_tile:nth-last-of-type(1){
     border: 0.1vw solid #5e5e5e;
     border-right: 0.15vw solid #5e5e5e;
 }
-.skills_about .tools{
-    position: relative;
-    top: -20vw;
-    left: 0vw;
-    height: 10vw;
-    width: 90vw;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-.tools .lang_title{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 5vw;
-    width: 90vw;
-    border: 0.1vw solid #5e5e5e;
-    border-left: 0.15vw solid #5e5e5e;
-    border-right: 0.15vw solid #5e5e5e;
-    background-color: #ffffffcc;
-}
-.tools .lang_tile{
-    flex: 0 0 45vw;
-    /* flex-grow: 1; */
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    height: 20vw;
-    width: 45vw;
-    border: 0.1vw solid #5e5e5e;
-    border-bottom: 0.15vw solid #5e5e5e;
-    /* border-right: 0.15vw solid #5e5e5e; */
-    background-color: #ffffffcc;
-}
 .tools > .lang_tile >p{
-    font-size: 1.6vw;
+    font-size: 1.4vw;
     line-height: 2.5vw;
     letter-spacing: normal;
-    padding: 0 4vw;
+    padding: 0 6vw;
     text-align: justify;
-    font-weight: 400;
+    font-weight: 500;
 }
 .tools > .lang_tile:nth-of-type(2){
     border-left: 0.15vw solid #5e5e5e;
@@ -472,13 +473,41 @@ p{
     border-right: 0.15vw solid #5e5e5e;
 }
 .tools > .lang_tile >p b{
+    font-size: 1.6vw;
     font-family: "Ubuntu Sans Mono", monospace;
     font-weight: 800;
     cursor: pointer;
     color: #00000099;
-    /* font-size: 1.3vw; */
 }
 .tools > .lang_tile >p b:nth-of-type(1){
+    display: block;
+    height: 5vw;
+    position: relative;
+    top: 0;
+    padding-top: 2.5vw;
+}
+.web_dev > .lang_tile > p{
+    font-size: 1.2vw;
+    line-height: 2vw;
+    letter-spacing: normal;
+    padding: 0 2vw;
+    text-align: justify;
+    font-weight: 500;
+}
+.web_dev > .lang_tile:nth-of-type(2){
+    border-left: 0.15vw solid #5e5e5e;
+}
+.web_dev > .lang_tile:nth-last-of-type(1){
+    border-right: 0.15vw solid #5e5e5e;
+}
+.web_dev > .lang_tile >p b{
+    font-size: 1.6vw;
+    font-family: "Ubuntu Sans Mono", monospace;
+    font-weight: 800;
+    cursor: pointer;
+    color: #00000099;
+}
+.web_dev > .lang_tile >p b:nth-of-type(1){
     display: block;
     height: 5vw;
     position: relative;
