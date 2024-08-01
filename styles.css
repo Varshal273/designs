@@ -371,7 +371,8 @@ p{
 .programming_lang .lang_tile{
     flex: 0 0 30vw;
     flex-grow: 1;
-    justify-content: start;
+    /* justify-content: start; */
+    justify-content: space-between;
     align-items: center;
     height: 5vw;
     width: 30vw;
@@ -387,7 +388,8 @@ p{
 .database .lang_tile{
     flex: 0 0 30vw;
     flex-grow: 1;
-    justify-content: start;
+    /* justify-content: start; */
+    justify-content: space-between;
     align-items: center;
     height: 5vw;
     width: 25vw;
@@ -443,6 +445,17 @@ p{
     letter-spacing: .2vw;
     color: #00000099;
 }
+.lang_tile img{
+    box-sizing: border-box;
+    height: 5vw;
+    width: 5vw;
+    border-right:none;
+    padding: .5vw;
+}
+.lang_tile > .html_img{
+    margin-right: 0;
+    margin-left: auto;
+}
 .lang_title p{
     font-size: 1.8vw;
     font-weight: 400;
@@ -450,10 +463,15 @@ p{
     font-family: "Rubik Mono One", monospace;
     color: #00000099;
 }
-.programming_lang > .lang_tile:hover, .database > .lang_tile:hover{
-    cursor: pointer;
-    filter: invert();
+.database > .lang_tile:hover > p,.programming_lang > .lang_tile:hover > p{
+    color: #ffffffaa;
     transition: all .2s;
+}
+.database > .lang_tile:hover,.programming_lang > .lang_tile:hover{
+    cursor: pointer;
+    background-color: #000000cc;
+    backdrop-filter: invert();
+    transition: all .5s;
 }
 .database .lang_tile:nth-last-of-type(1){
     border: 0.1vw solid #5e5e5e;
