@@ -317,6 +317,7 @@ p{
 }
 .about_section > .about_arrow:hover{
     background-color: #000044;
+    /* background-color: #000033; */
     border-radius: 5vw;
     scale: 80%;
 }

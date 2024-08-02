@@ -4,7 +4,10 @@ for(let i=0;i<10*100;i++){
 }
 let ab = document.getElementById('about_statement');
 let ab_scroll_count = 0;
+let ab_style = window.getComputedStyle(document.getElementById("about_statement"), null);
+let scroll_height = ab_style.getPropertyValue("height").replaceAll('px','')
 function ab_scroll(a){
+    scroll_height = ab_style.getPropertyValue("height").replaceAll('px','')
     console.log(a);
     if(a == 'up'){
         if(ab_scroll_count <= 0){
@@ -12,7 +15,7 @@ function ab_scroll(a){
         }
         else{
             ab_scroll_count--;
-            ab_scroll_up(ab_scroll_count * 260);
+            ab_scroll_up(ab_scroll_count * scroll_height);
         }
     }
     if(a == 'down'){
@@ -21,7 +24,7 @@ function ab_scroll(a){
         }
         else{
             ab_scroll_count++;
-            ab_scroll_down(ab_scroll_count * 260);
+            ab_scroll_down(ab_scroll_count * scroll_height);
         }
     }
 }
